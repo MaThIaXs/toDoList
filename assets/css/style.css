@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+:root {
+    --background-color: #F2BEA0;
+    --font-color: #593825;
+}
+
+.container {
+    background-color: var(--background-color);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    text-align: center;
+    padding: 50px 100px;
+    border-radius: 50px;
+    background: var(--background-color);
+    box-shadow:  29px 29px 72px #cea288,
+                -29px -29px 72px #ffdbb8;
+}
+
+.content h1 {
+    font-size: 35pt;
+    font-weight: 700;
+    margin-bottom: 35px;
+    color: var(--font-color);
+}
+
+button {
+    border: 1px solid var(--font-color);
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--font-color);
+    font-weight: 700;
+    transition: all 0.2s ease-out;
+}
+
+button:hover {
+    color: #fff;
+    background-color: var(--font-color);
+}
+
+input[type="text"] {
+    border: 1px solid var(--font-color);
+    border-radius: 5px;
+    padding: 5px;
+    color: var(--font-color);
+    font-weight: 700;
+}
+
+#tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--font-color);
+    margin-top: 15px;
+}
+
+label {
+    margin-left: 5px;
+}
+
+:checked + label {
+    color: gray;
+    text-decoration: line-through;
+}
